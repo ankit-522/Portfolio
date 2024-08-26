@@ -1,0 +1,96 @@
+#Home {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+.img {
+    width: 370px;
+    height: 300px;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+}
+
+.introduction_head {
+    text-align: center;
+    color: rgb(43, 226, 171);
+}
+
+.introduction_para {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    width: 70%;
+    height: fit-content;
+}
+
+.home_p:hover {
+    color: bisque;
+    text-shadow: 0px 0px 9px gold;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    #Home {
+        text-align: center;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+    #Home {
+        padding-top: 2rem;
+        height: auto;
+    }
+
+    .img {
+        width: 300px;
+        height: 240px;
+    }
+
+    .introduction_para {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    .introduction_head h1 {
+        font-size: 1.8rem;
+    }
+
+    .download_btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #Home {
+        padding-top: 1rem;
+        height: auto;
+    }
+
+    .img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .introduction_para {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .introduction_head h1 {
+        font-size: 1.5rem;
+    }
+
+    .download_btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

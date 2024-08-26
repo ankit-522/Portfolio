@@ -1,0 +1,120 @@
+/* Base Styles */
+#Skills {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.8rem auto;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 20vw;
+  max-width: 200px;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.header:hover {
+  transform: scale(1.05);
+}
+
+.Skills_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.skill_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Skills_Name {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* Large Tablets and Small Desktops (1200px and below) */
+@media (max-width: 1200px) {
+  .header {
+    width: 18vw;
+  }
+
+  .Skills_img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Skills_Name {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets (992px and below) */
+@media (max-width: 992px) {
+  .header {
+    width: 22vw;
+  }
+
+  .Skills_img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Skills_Name {
+    font-size: 1rem;
+  }
+}
+
+/* Small Tablets and Large Phones (768px and below) */
+@media (max-width: 768px) {
+  .header {
+    width: 40vw;
+  }
+
+  .Skills_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .Skills_Name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  #Skills {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+
+  .header {
+    width: 60vw;
+  }
+
+  .Skills_img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Skills_Name {
+    font-size: 0.8rem;
+  }
+}

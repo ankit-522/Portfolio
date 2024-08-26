@@ -1,0 +1,134 @@
+/* Base Styles */
+#Projects {
+    margin: auto;
+    width: 80%;
+    margin-top: 5rem;
+    height: 100%;
+}
+
+.main_cart {
+    border: 2px solid yellow;
+    border-radius: 30px;
+    margin: 2rem;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.main_cart:hover {
+    box-shadow: 0px 0px 19px rgb(251, 255, 0);
+}
+
+.project_cart {
+    display: flex;
+    align-items: start;
+}
+
+.project_cart h2 {
+    margin-top: -2px;
+}
+
+.project_cart img {
+    width: 400px;
+    height: 200px;
+    margin: 0.2rem 1rem;
+    box-shadow: 0px 0px 9px wheat;   
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+}
+
+.project_btn {
+    width: 20%;
+    margin: 0.6rem auto;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s, background-color 0.3s;
+    border-color: #646cff;
+    color: aqua;
+    text-shadow: 0px 0px 9px wheat;   
+    text-align: center;
+}
+
+.project_btn:active {
+    background-color: green;
+}
+
+/* Media Queries */
+
+/* Tablets and Small Desktops (1170px and below) */
+@media (max-width: 1170px) {
+    .project_cart {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .project_cart img {
+        width: 350px;
+        height: 175px;
+    }
+}
+
+/* Tablets and Medium Devices (820px and below) */
+@media (max-width: 820px) {
+    .project_btn {
+        padding: 0.8rem;
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    .project_cart img {
+        width: 320px;
+        height: 160px;
+    }
+}
+
+/* Mobile Devices (690px and below) */
+@media (max-width: 690px) {
+    .project_btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        width: 60%;
+    }
+
+    .project_cart img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .project_cart h2 {
+        margin-top: 4px;
+    }
+}
+
+/* Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .project_btn {
+        padding: 0.4rem;
+        font-size: 0.7rem;
+        width: 80%;
+    }
+
+    .project_cart img {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+
+    #Projects{
+        width: 95%;
+        /* border: 2px solid red; */
+    }
+
+    .main_cart{
+      /* width: 90%; */
+      margin: 0.5rem;
+    }
+}
