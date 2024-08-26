@@ -27,7 +27,7 @@ export default function Navbar(){
       
     <nav id="navbar">
     
-      <h2 data-aos="fade-right">Protfolio</h2>
+      <h2 data-aos="fade-right">Portfolio</h2>
       
       <ul 
 

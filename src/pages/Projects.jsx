@@ -1,17 +1,17 @@
 import React,{useState} from "react";
 import "./Projects.css"
-import Protfolio_img from "../assets/protfolio_img.png"
+import Portfolio_img from "../assets/protfolio_img.png"
 import lms_img from "../assets/lms_img.png"
 
 export default function Projects() {
 
   let [project,setproject] = useState([
     {
-      "project_img":Protfolio_img,
-      "project_title":"My Protfolio",
+      "project_img":Portfolio_img,
+      "project_title":"My Portfolio",
       "project_detale":" This site itself is a testament to my skills and creativity. It showcases my work, provides insights into my skills, and offers a way to connect with me. Built using React, this portfolio highlights my ability to design and develop responsive and engaging user interfaces.",
-      "project_view":"hi",
-      "project_github":"hi",
+      "project_view":"https://portfolio-swart-psi.vercel.app/",
+      "project_github":"https://github.com/ankit-522/Portfolio",
     },
     {
       "project_img":lms_img,
